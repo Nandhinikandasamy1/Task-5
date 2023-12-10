@@ -1,0 +1,28 @@
+'''
+Write a python program to calculate the total number of Vowels and count of each individual vowel AEIOU in the string GUVI Geeks Private Limited
+'''
+print("Type String to Calculate the no. of vowels in it.:") #Printing statement
+string = input().lower() #Getting Value from user and converting all of them to lower case
+vowellist = ['a', 'e','i','o','u'] #Creating list of vowels
+Vowelcount = 0 #Creating some variables 
+a=e=i=o=u = 0
+for charecter in string: #Using for loop taking each charecter and assigning them to variable charecter
+    if charecter in vowellist: #Comparing the charecter with vowel list
+        Vowelcount += 1 #If it found the vowel it will add 1 with vowel count
+        match charecter: # using switch case adding individual vowels
+            case 'a':
+                a += 1
+            case 'e':
+                e += 1
+            case 'i':
+                i += 1
+            case 'o':
+                o += 1
+            case 'u':
+                u += 1       
+print("Total number of Vowels: ",Vowelcount) # Printing all the values
+print ("Total number of A = ",a)
+print ("Total number of E = ",e)
+print ("Total number of I = ",i)
+print ("Total number of O = ",o)
+print ("Total number of U = ",u)
