@@ -1,0 +1,21 @@
+#CheckAnagram
+
+print("Type two Strings to check anagram") #Printing statement
+string1 = input().lower() #Getting Value from user and converting all of them to lower case
+string2 = input().lower() 
+listofstring1 = [] # empty list to store data
+listofstring2 = [] 
+for charecter in string1: #for loop to STORE charecter by charecter in list
+        listofstring1.append(charecter)
+
+for charecter in string2: 
+        listofstring2.append(charecter)
+
+#Sorting both the lists
+listofstring1.sort()
+listofstring2.sort()
+#Comparing the lists
+if (listofstring1 == listofstring2):#Condition to check both strings
+    print("True")
+else:
+    print("False")
